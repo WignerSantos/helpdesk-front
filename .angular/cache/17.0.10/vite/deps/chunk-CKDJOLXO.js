@@ -2,7 +2,7 @@ import {
   ScrollDispatcher,
   ScrollingModule,
   ViewportRuler
-} from "./chunk-IF2C5XHG.js";
+} from "./chunk-E43UQVGS.js";
 import {
   BidiModule,
   Directionality,
@@ -14,11 +14,11 @@ import {
   coerceCssPixelValue,
   hasModifierKey,
   supportsScrollBehavior
-} from "./chunk-WSUWU3HZ.js";
+} from "./chunk-MYUGEZ5J.js";
 import {
   DOCUMENT,
   Location
-} from "./chunk-OF5NJCI5.js";
+} from "./chunk-FXFEXVKG.js";
 import {
   ANIMATION_MODULE_TYPE,
   ApplicationRef,
@@ -39,8 +39,6 @@ import {
   Subscription,
   TemplateRef,
   ViewContainerRef,
-  __spreadProps,
-  __spreadValues,
   booleanAttribute,
   filter,
   inject,
@@ -60,7 +58,11 @@ import {
   ɵɵdirectiveInject,
   ɵɵgetInheritedFactory,
   ɵɵinject
-} from "./chunk-TKNFTCHN.js";
+} from "./chunk-NPPZ2YEL.js";
+import {
+  __spreadProps,
+  __spreadValues
+} from "./chunk-FWOMF3V2.js";
 
 // node_modules/@angular/cdk/fesm2022/portal.mjs
 function throwNullPortalError() {
@@ -3266,4 +3268,4 @@ export {
   CdkConnectedOverlay,
   OverlayModule
 };
-//# sourceMappingURL=chunk-HRSNVZVS.js.map
+//# sourceMappingURL=chunk-CKDJOLXO.js.map
