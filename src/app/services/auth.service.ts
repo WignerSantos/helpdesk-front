@@ -13,7 +13,11 @@ export class AuthService {
 
   jwtService: JwtHelperService = new JwtHelperService();
 
-  constructor(private http: HttpClient, @Inject(PLATFORM_ID) private platformId: any) { }
+  constructor(private http: HttpClient,
+              @Inject(PLATFORM_ID) private platformId: any) { }
+
+  ngOnInit(): void {
+  }
 
   autheticate(creds: Credenciais) {
     return this.http.post(`${API_CONFIG.baseUrl}/auth/login`, creds, {

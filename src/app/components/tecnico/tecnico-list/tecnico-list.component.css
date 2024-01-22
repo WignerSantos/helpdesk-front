@@ -6,4 +6,20 @@ table {
     width: 80%;
     margin: auto;
     margin-top: .7rem;
+    margin-bottom: 1rem;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    width: 100;
+    text-align: center;
+    margin-bottom: 2rem;
 }
