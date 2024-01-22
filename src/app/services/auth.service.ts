@@ -32,6 +32,14 @@ export class AuthService {
     }
   }
 
+  hasToken() {
+    if (isPlatformBrowser(this.platformId)) {
+      if(localStorage.getItem("token") != "") {
+        localStorage.clear();
+      }
+    }
+  }
+
   isAutheticated() {
     let token = null;
     if (isPlatformBrowser(this.platformId)) {

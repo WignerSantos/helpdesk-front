@@ -21,11 +21,14 @@ export class LoginComponent {
   email = new FormControl(null, Validators.email);
   senha = new FormControl(null, Validators.minLength(3));
 
-  constructor(private toast: ToastrService, private service: AuthService, private router: Router) {
+  constructor(private toast: ToastrService,
+              private service: AuthService,
+              private authService: AuthService,
+              private router: Router) {
   }
 
   ngOnInit(): void {
-    
+    this.authService.hasToken();
   }
 
   logar() {
