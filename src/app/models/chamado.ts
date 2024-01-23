@@ -3,7 +3,7 @@ export interface Chamado {
     dataAbertura?:   string;
     dataFechamento?: string;
     prioridade:      string;
-    stauts:          string;
+    status:          string;
     titulo:          string;
     descricao:       string;
     tecnico:            any;
