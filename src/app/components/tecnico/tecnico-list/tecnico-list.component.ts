@@ -26,7 +26,6 @@ export class TecnicoListComponent {
 
   findAll() {
     this.service.findAll().subscribe(response => {
-      console.log(response);
       this.ELEMENT_DATA = response;
       this.dataSource = new MatTableDataSource<Tecnico>(this.ELEMENT_DATA);
       this.dataSource.paginator = this.paginator;
