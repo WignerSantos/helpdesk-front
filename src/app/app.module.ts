@@ -5,6 +5,9 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
+import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+import { ToastrModule } from 'ngx-toastr';
 
 // Form in Angular
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -30,14 +33,19 @@ import { MatCardModule } from '@angular/material/card';
 
 // Nav Component
 import { NavComponent } from './components/nav/nav.component';
-import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
-import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
+
+// Home Component
+import { HomeComponent } from './components/home/home.component';
+
+// Login Component
 import { LoginComponent } from './components/login/login.component';
-import { ToastrModule } from 'ngx-toastr';
-import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
-import { AuthInterceptorProvider } from './interceptors/auth.interceptor';
+
+// Tecnico Component
+import { TecnicoListComponent } from './components/tecnico/tecnico-list/tecnico-list.component';
 import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecnico-create.component';
+import { TecnicoUpdateComponent } from './components/tecnico/tecnico-update/tecnico-update.component';
+import { TecnicoDeleteComponent } from './components/tecnico/tecnico-delete/tecnico-delete.component';
 
 
 @NgModule({
@@ -48,6 +56,8 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     HeaderComponent,
     TecnicoListComponent,
     TecnicoCreateComponent,
+    TecnicoUpdateComponent,
+    TecnicoDeleteComponent,
     LoginComponent
   ],
   imports: [
@@ -74,11 +84,14 @@ import { TecnicoCreateComponent } from './components/tecnico/tecnico-create/tecn
     MatIconModule,
     MatListModule,
     MatCardModule,
+    // Toastr
     ToastrModule.forRoot({
       timeOut: 4000,
       closeButton: true,
       progressBar: true
     }),
+
+    // NgxMask
     NgxMaskDirective,
     NgxMaskPipe
   ],

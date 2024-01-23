@@ -1,12 +1,12 @@
-table {
-    width: 100;
-}
-
 .container {
     width: 80%;
     margin: auto;
     margin-top: .7rem;
     margin-bottom: 1rem;
+}
+
+table {
+    width: 100;
 }
 
 mat-form-field {
