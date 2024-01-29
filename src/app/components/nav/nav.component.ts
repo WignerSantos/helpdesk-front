@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth.service';
+import { ToastrService } from 'ngx-toastr';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-nav',
@@ -10,14 +12,17 @@ import { AuthService } from '../../services/auth.service';
 
 export class NavComponent {
 
-  constructor(private router: Router, private authService: AuthService) {}
+  constructor(private router: Router,
+              private toast: ToastrService,
+              private authService: AuthService) {}
 
   ngOnInit(): void {
-    this.router.navigate(['tecnicos'])
+    this.router.navigate(['home'])
   }
 
   logout() {
     this.router.navigate(["login"]);
     this.authService.logout();
+    this.toast.info("Logout realizado com sucesso", "Logout")
   }
 }
