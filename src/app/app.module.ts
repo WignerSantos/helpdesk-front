@@ -13,7 +13,7 @@ import { ToastrModule } from 'ngx-toastr';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 // Rest requests
-import { HttpClientModule, HttpContext } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 // Components imports from Angular Material
 import { MatFormFieldModule } from '@angular/material/form-field';
@@ -125,4 +125,5 @@ import { ChamadoReadComponent } from './components/chamado/chamado-read/chamado-
   ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }

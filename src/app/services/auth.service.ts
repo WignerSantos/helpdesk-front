@@ -5,12 +5,12 @@ import { API_CONFIG } from '../config/api.config';
 import { JwtHelperService } from '@auth0/angular-jwt';
 import { isPlatformBrowser } from '@angular/common';
 
+
 @Injectable({
   providedIn: 'root'
 })
 
 export class AuthService {
-
   jwtService: JwtHelperService = new JwtHelperService();
 
   constructor(private http: HttpClient,

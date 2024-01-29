@@ -4,13 +4,13 @@ import { MatTableDataSource } from '@angular/material/table';
 import { Tecnico } from '../../../models/tecnico';
 import { TecnicoService } from '../../../services/tecnico.service';
 
+
 @Component({
   selector: 'app-tecnico-list',
   templateUrl: './tecnico-list.component.html',
   styleUrl: './tecnico-list.component.css'
 })
 export class TecnicoListComponent {
-
   ELEMENT_DATA: Tecnico[] = []
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol', 'acoes'];
